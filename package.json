@@ -1,0 +1,17 @@
+{
+  "name": "koa-snake-res",
+  "version": "0.1.0",
+  "description": "koa snake case json response",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "koa"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "change-case": "^2.3.0"
+  }
+}
