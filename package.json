@@ -2,19 +2,42 @@
   "name": "koa-snake-res",
   "version": "0.1.0",
   "description": "koa snake case json response",
-  "main": "index.js",
-  "scripts": {
-    "test": "mocha"
-  },
-  "keywords": [
-    "koa"
-  ],
-  "author": "",
   "license": "MIT",
+  "repository": "chentsulin/koa-snake-res",
+  "author": {
+    "name": "C. T. Lin",
+    "email": "chentsulin@gmail.com",
+    "url": "https://github.com/chentsulin"
+  },
+  "engines": {
+    "node": ">= 0.10.0",
+    "iojs": ">= 1.0.0"
+  },
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "mocha",
+    "test-travis": "node node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --report lcovonly -- --reporter dot"
+  },
+  "bugs": {
+    "url": "https://github.com/chentsulin/koa-snake-res/issues"
+  },
+  "homepage": "https://github.com/chentsulin/koa-snake-res",
+  "keywords": [
+    "koa",
+    "middleware",
+    "json",
+    "response",
+    "res",
+    "snake-case",
+    "snake_case"
+  ],
   "dependencies": {
     "change-case": "^2.3.0"
   },
   "devDependencies": {
-    "mocha": "^2.2.4"
+    "istanbul": "^0.3.13",
+    "mocha": "*"
   }
 }
