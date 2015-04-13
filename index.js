@@ -1,15 +1,16 @@
 var changeCase = require('change-case')
 
-module.exports = function *(next) {
-  yield next
+module.exports = function() {
+  return function *(next) {
+    yield next
 
-  if (!this.response.is('json')) return
+    if (!this.response.is('json')) return
 
-  var body = this.body
+    var body = this.body
 
-  this.body = toSnakeCase(this.body)
-};
-
+    this.body = toSnakeCase(this.body)
+  }
+}
 
 function toSnakeCase(json) {
   for (var key in json) {
