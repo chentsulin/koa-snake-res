@@ -13,5 +13,8 @@
   "license": "MIT",
   "dependencies": {
     "change-case": "^2.3.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.4"
   }
 }
