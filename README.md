@@ -4,13 +4,37 @@
 [![Build Status][travis-image]][travis-url]
 [![Test coverage][coveralls-image]][coveralls-url]
 
->
+> koa middleware for snake case json response
 
 ## Install
 
+```sh
+$ npm install koa-snake-res
+```
 
 ## Usage
 
+```js
+var koa = require('koa')
+var app
+var snakeRes = require('koa-snake-res')
+
+app.use(snakeRes())
+
+app.use(function *() {
+  this.body = {
+    camelCase: 'this is a camelCase'
+  }
+})
+
+app.listen()
+
+// GET /
+//
+// {
+//    camel_case: 'this is a camelCase'
+// }
+```
 
 ## License
 MIT © [C. T. Lin](https://github.com/chentsulin)
