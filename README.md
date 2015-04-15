@@ -16,7 +16,7 @@ $ npm install koa-snake-res
 
 ```js
 var koa = require('koa')
-var app
+var app = koa()
 var snakeRes = require('koa-snake-res')
 
 app.use(snakeRes())

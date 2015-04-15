@@ -1,6 +1,6 @@
 {
   "name": "koa-snake-res",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "koa snake case json response",
   "license": "MIT",
   "repository": "chentsulin/koa-snake-res",
