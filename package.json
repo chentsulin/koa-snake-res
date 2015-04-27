@@ -1,6 +1,6 @@
 {
   "name": "koa-snake-res",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Snake case json response transform middleware for koa",
   "license": "MIT",
   "repository": "chentsulin/koa-snake-res",
