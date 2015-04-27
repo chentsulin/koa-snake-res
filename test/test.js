@@ -1,4 +1,4 @@
-var koaSnakeRes = require('../')
+var snakeRes = require('../')
 var request = require('supertest')
 var koa = require('koa')
 var app
@@ -8,7 +8,7 @@ describe('koa-snake-res', function() {
   beforeEach(function() {
     app = koa()
 
-    app.use(koaSnakeRes())
+    app.use(snakeRes())
   })
 
   it('camelCase should be transform to snake_case', function(done) {
