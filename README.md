@@ -4,7 +4,7 @@
 [![Build Status][travis-image]][travis-url]
 [![Test coverage][coveralls-image]][coveralls-url]
 
-> koa middleware for snake case json response
+> Snake case json response transform middleware for koa
 
 ## Install
 
