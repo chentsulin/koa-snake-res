@@ -1,6 +1,6 @@
 'use strict'
 
-var changeCase = require('change-case')
+var snakeCase = require('snake-case')
 
 module.exports = function() {
   return function *(next) {
@@ -20,7 +20,7 @@ function toSnakeCase(json) {
       }
       var _value = json[key]
       delete json[key]
-      json[ changeCase.snakeCase(key) ] = _value
+      json[ snakeCase(key) ] = _value
     }
   }
 

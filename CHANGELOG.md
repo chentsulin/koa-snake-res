@@ -1,3 +1,9 @@
+# 0.2.0 (2015.5.7)
+
+- **Improve tests**
+- **Fix eslint coding style**
+- **Replace dependency:** replace `change-case` to `snake-case`.
+
 # 0.1.3 (2015.5.6)
 
 - **Avoid exec on null**
