@@ -15,7 +15,7 @@ module.exports = function() {
 function toSnakeCase(json) {
   for (var key in json) {
     if (json.hasOwnProperty(key)) {
-      if (typeof json[key] === 'object') {
+      if (json[key] && typeof json[key] === 'object') {
         json[key] = toSnakeCase(json[key])
       }
       var _value = json[key]
