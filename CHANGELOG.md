@@ -1,3 +1,8 @@
+# 0.1.3 (2015.5.6)
+
+- **Avoid exec on null**
+
+
 # 0.1.2 (2015.4.27)
 
 - **Fix tests config**
