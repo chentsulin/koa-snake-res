@@ -1,3 +1,5 @@
+'use strict'
+
 var snakeRes = require('../')
 var request = require('supertest')
 var koa = require('koa')
@@ -24,7 +26,7 @@ describe('koa-snake-res', function() {
     .expect('Content-Type', /json/)
     .expect(200)
     .expect(function(res) {
-      if ( ! ('camel_case' in res.body)) return 'camelCase to snake_case failed'
+      if (!('camel_case' in res.body)) return 'camelCase to snake_case failed'
     })
     .end(done)
   })
@@ -44,8 +46,8 @@ describe('koa-snake-res', function() {
     .expect('Content-Type', /json/)
     .expect(200)
     .expect(function(res) {
-      if ( ! ('camel_case' in res.body)) return 'camelCase to snake_case failed'
-      if ( ! ('camel_case_too' in res.body.camel_case)) return 'camelCase to snake_case recursively failed'
+      if (!('camel_case' in res.body)) return 'camelCase to snake_case failed'
+      if (!('camel_case_too' in res.body.camel_case)) return 'camelCase to snake_case recursively failed'
     })
     .end(done)
   })
@@ -65,8 +67,8 @@ describe('koa-snake-res', function() {
     .expect('Content-Type', /json/)
     .expect(200)
     .expect(function(res) {
-      if ( ! ('camel_case' in res.body)) return 'camelCase to snake_case failed'
-      if ( ! ('camel_case_too' in res.body.camel_case)) return 'camelCase to snake_case recursively failed'
+      if (!('camel_case' in res.body)) return 'camelCase to snake_case failed'
+      if (!('camel_case_too' in res.body.camel_case)) return 'camelCase to snake_case recursively failed'
     })
     .end(done)
   })
@@ -92,12 +94,12 @@ describe('koa-snake-res', function() {
     .expect('Content-Type', /json/)
     .expect(200)
     .expect(function(res) {
-      if ( ! ('camel_case' in res.body)) return 'camelCase to snake_case failed'
-      if ( ! (Array.isArray(res.body.camel_case))) return 'handle array failed'
-      if ( ! ('camel_case_too' in res.body.camel_case[0])) return 'handle array element failed'
-      if ( ! ('camel_case_same' in res.body.camel_case[1])) return 'handle array element failed'
-      if ( ! ('camel_case_nest' in res.body.camel_case[2])) return 'handle array element failed'
-      if ( ! ('camel_case_again' in res.body.camel_case[2].camel_case_nest)) return 'handle object in array failed'
+      if (!('camel_case' in res.body)) return 'camelCase to snake_case failed'
+      if (!(Array.isArray(res.body.camel_case))) return 'handle array failed'
+      if (!('camel_case_too' in res.body.camel_case[0])) return 'handle array element failed'
+      if (!('camel_case_same' in res.body.camel_case[1])) return 'handle array element failed'
+      if (!('camel_case_nest' in res.body.camel_case[2])) return 'handle array element failed'
+      if (!('camel_case_again' in res.body.camel_case[2].camel_case_nest)) return 'handle object in array failed'
     })
     .end(done)
   })

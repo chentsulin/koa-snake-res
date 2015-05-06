@@ -1,14 +1,14 @@
+'use strict'
+
 var changeCase = require('change-case')
 
 module.exports = function() {
   return function *(next) {
     yield next
 
-    if (!this.response.is('json')) return
-
-    var body = this.body
-
-    this.body = toSnakeCase(this.body)
+    if (this.response.is('json')) {
+      this.body = toSnakeCase(this.body)
+    }
   }
 }
 
