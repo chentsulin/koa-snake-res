@@ -3,6 +3,8 @@
 [![NPM version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
 [![Test coverage][coveralls-image]][coveralls-url]
+[![Dependency Status][david_img]][david_site]
+
 
 > Snake case json response transform middleware for koa
 
@@ -45,3 +47,5 @@ MIT © [C. T. Lin](https://github.com/chentsulin)
 [travis-url]: https://travis-ci.org/chentsulin/koa-snake-res
 [coveralls-image]: https://img.shields.io/coveralls/chentsulin/koa-snake-res.svg?style=flat-square
 [coveralls-url]: https://coveralls.io/r/chentsulin/koa-snake-res
+[david_img]: https://img.shields.io/david/chentsulin/koa-snake-res.svg
+[david_site]: https://david-dm.org/chentsulin/koa-snake-res
