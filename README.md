@@ -2,6 +2,7 @@
 
 [![NPM version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
+[![Quality][codeclimate-image]][codeclimate-url]
 [![Test coverage][coveralls-image]][coveralls-url]
 [![Dependency Status][david_img]][david_site]
 
@@ -45,6 +46,8 @@ MIT © [C. T. Lin](https://github.com/chentsulin)
 [npm-url]: https://npmjs.org/package/koa-snake-res
 [travis-image]: https://travis-ci.org/chentsulin/koa-snake-res.svg
 [travis-url]: https://travis-ci.org/chentsulin/koa-snake-res
+[codeclimate-image]: https://img.shields.io/codeclimate/github/chentsulin/koa-snake-res.svg?style=flat-square
+[codeclimate-url]: https://codeclimate.com/github/chentsulin/koa-snake-res
 [coveralls-image]: https://img.shields.io/coveralls/chentsulin/koa-snake-res.svg?style=flat-square
 [coveralls-url]: https://coveralls.io/r/chentsulin/koa-snake-res
 [david_img]: https://img.shields.io/david/chentsulin/koa-snake-res.svg
