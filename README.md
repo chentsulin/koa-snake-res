@@ -44,7 +44,7 @@ MIT © [C. T. Lin](https://github.com/chentsulin)
 
 [npm-image]: https://img.shields.io/npm/v/koa-snake-res.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/koa-snake-res
-[travis-image]: https://travis-ci.org/chentsulin/koa-snake-res.svg
+[travis-image]: https://travis-ci.org/chentsulin/koa-snake-res.svg?branch=master
 [travis-url]: https://travis-ci.org/chentsulin/koa-snake-res
 [codeclimate-image]: https://img.shields.io/codeclimate/github/chentsulin/koa-snake-res.svg?style=flat-square
 [codeclimate-url]: https://codeclimate.com/github/chentsulin/koa-snake-res
