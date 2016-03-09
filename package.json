@@ -17,7 +17,7 @@
     "index.js"
   ],
   "scripts": {
-    "test": "mocha --harmony-generators"
+    "test": "mocha"
   },
   "bugs": {
     "url": "https://github.com/chentsulin/koa-snake-res/issues"
